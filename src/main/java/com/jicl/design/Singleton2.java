@@ -6,5 +6,5 @@ package com.jicl.design;
  * @date: 2019年8月21日
  */
 public enum Singleton2 {
-
+	INSTANCE
 }
