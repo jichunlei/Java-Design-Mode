@@ -27,6 +27,7 @@ public class Province extends RegionComposite {
         childList.remove(regionComposite);
     }
 
+    @Override
     public void print() {
         System.out.println(getCode() + ":" + getName());
         for (RegionComposite regionComposite : childList) {

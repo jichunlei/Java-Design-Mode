@@ -12,6 +12,7 @@ public class District extends RegionComposite {
         super(code, name);
     }
 
+    @Override
     public void print() {
         System.out.println("----"+getCode() + ":" + getName());
     }
