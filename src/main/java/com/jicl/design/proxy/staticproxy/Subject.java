@@ -1,4 +1,4 @@
-package com.jicl.design.proxy;
+package com.jicl.design.proxy.staticproxy;
 
 /**
  * 抽象主题
