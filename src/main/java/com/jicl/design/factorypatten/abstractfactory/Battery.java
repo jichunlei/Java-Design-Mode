@@ -1,11 +1,11 @@
 package com.jicl.design.factorypatten.abstractfactory;
 
 /**
- * CPU接口
+ * 电池
  *
  * @author : xianzilei
- * @date : 2020/6/3 13:22
+ * @date : 2020/9/21 20:35
  */
-public interface Cpu {
-    public void calculate();
+public interface Battery {
+    void show();
 }

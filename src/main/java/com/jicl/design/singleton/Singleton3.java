@@ -16,9 +16,11 @@ public class Singleton3 {
 
     //3.提供一个公有的静态方法返回实例对象
     public static Singleton3 getInstance() {
+        //如果未实例化，创建实例
         if (instance == null) {
             instance = new Singleton3();
         }
+        //返回实例
         return instance;
     }
 }

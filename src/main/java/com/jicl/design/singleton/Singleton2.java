@@ -12,7 +12,7 @@ public class Singleton2 {
     }
 
     //2.创建对象实例，通过静态代码块实例化
-    private final static Singleton2 instance;
+    private static Singleton2 instance;
 
     //3.通过静态代码块实例化
     static {

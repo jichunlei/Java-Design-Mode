@@ -8,16 +8,29 @@ package com.jicl.design.factorypatten.abstractfactory;
  */
 public interface AbstractFactory {
     /**
-     * 创建CPU对象
+     * 生产主板
      *
-     * @return CPU对象
-     */
-    public Cpu createCpu();
+     * @return com.jicl.design.factorypatten.abstractfactory.Mainboard
+     * @author xianzilei
+     * @date 2020/9/21 20:37
+     **/
+    MainBoard createMainboard();
 
     /**
-     * 创建主板对象
+     * 生产屏幕
      *
-     * @return 主板对象
-     */
-    public Mainboard createMainboard();
+     * @return com.jicl.design.factorypatten.abstractfactory.Screen
+     * @author xianzilei
+     * @date 2020/9/21 20:38
+     **/
+    Screen createScreen();
+
+    /**
+     * 生产电池
+     *
+     * @return com.jicl.design.factorypatten.abstractfactory.Battery
+     * @author xianzilei
+     * @date 2020/9/21 20:38
+     **/
+    Battery createBattery();
 }
