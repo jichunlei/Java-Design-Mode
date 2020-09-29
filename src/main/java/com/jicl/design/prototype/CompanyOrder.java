@@ -1,5 +1,7 @@
 package com.jicl.design.prototype;
 
+import java.util.StringJoiner;
+
 /**
  * 企业订单
  *
@@ -46,7 +48,6 @@ public class CompanyOrder extends AbstractOrder {
         final StringBuilder sb = new StringBuilder("CompanyOrder{");
         sb.append("companyCode='").append(companyCode).append('\'');
         sb.append(", companyName='").append(companyName).append('\'');
-        sb.append(", goodsNum='").append(getGoodsNum()).append('\'');
         sb.append('}');
         return sb.toString();
     }
