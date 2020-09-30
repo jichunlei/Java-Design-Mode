@@ -1,25 +1,25 @@
 package com.jicl.design.builder;
 
 /**
- * 法师角色构造器
+ * 战士射手角色构造器
  *
  * @author : xianzilei
- * @date : 2020/9/25 16:46
+ * @date : 2020/9/30 9:14
  */
-public class MageGameRoleBuilder extends AbstractGameRoleBuilder {
+public class WarriorGameRoleBuilder extends AbstractGameRoleBuilder {
 
-    public MageGameRoleBuilder() {
-        super.gameRole.setName("瑞兹");
+    public WarriorGameRoleBuilder() {
+        super.gameRole.setName("盖伦");
     }
 
     @Override
     public void buildRolePosition() {
-        gameRole.setRolePosition("法师");
+        gameRole.setRolePosition("战士");
     }
 
     @Override
     public void buildHair() {
-        gameRole.setHair("光头");
+        gameRole.setHair("黑发");
     }
 
     @Override
@@ -29,11 +29,11 @@ public class MageGameRoleBuilder extends AbstractGameRoleBuilder {
 
     @Override
     public void buildClothes() {
-        gameRole.setClothes("法师服");
+        gameRole.setClothes("战士盔甲");
     }
 
     @Override
     public void buildArms() {
-        gameRole.setArms("卷轴");
+        gameRole.setArms("大宝剑");
     }
 }

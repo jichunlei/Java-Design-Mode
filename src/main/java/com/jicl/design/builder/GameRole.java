@@ -7,6 +7,12 @@ package com.jicl.design.builder;
  * @date : 2020/9/25 14:50
  */
 public class GameRole {
+
+    /**
+     * 角色名称
+     */
+    private String name;
+
     /**
      * 角色定位
      */
@@ -27,6 +33,14 @@ public class GameRole {
      * 武器
      */
     private String arms;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getRolePosition() {
         return rolePosition;
@@ -70,13 +84,13 @@ public class GameRole {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("GameRole{");
-        sb.append("rolePosition='").append(rolePosition).append('\'');
-        sb.append(", hair='").append(hair).append('\'');
-        sb.append(", sex='").append(sex).append('\'');
-        sb.append(", clothes='").append(clothes).append('\'');
-        sb.append(", arms='").append(arms).append('\'');
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder();
+        sb.append(name).append('\n');
+        sb.append("角色定位：").append(rolePosition).append('\n');
+        sb.append("头发：").append(hair).append('\n');
+        sb.append("性别：").append(sex).append('\n');
+        sb.append("服装：").append(clothes).append('\n');
+        sb.append("武器：").append(arms).append('\n');
         return sb.toString();
     }
 }

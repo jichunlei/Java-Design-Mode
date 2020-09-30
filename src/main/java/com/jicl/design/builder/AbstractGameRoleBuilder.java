@@ -10,7 +10,7 @@ public abstract class AbstractGameRoleBuilder {
     /**
      * 游戏角色
      */
-    protected GameRole gameRole;
+    protected GameRole gameRole = new GameRole();
 
     /**
      * 构造角色地位
@@ -57,4 +57,8 @@ public abstract class AbstractGameRoleBuilder {
      * @date 2020/9/25 12:04
      **/
     public abstract void buildArms();
+
+    public GameRole getGameRole() {
+        return gameRole;
+    }
 }
