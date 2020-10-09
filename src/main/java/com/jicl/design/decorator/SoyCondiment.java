@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  * @date : 2020/6/4 11:36
  */
 public class SoyCondiment extends CondimentDecorator {
-    //被装饰着
+    //装饰者
     private AbstractCafe cafe;
 
     public SoyCondiment(AbstractCafe cafe) {

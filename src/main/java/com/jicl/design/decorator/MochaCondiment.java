@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  */
 public class MochaCondiment extends CondimentDecorator {
 
-    //被装饰着
+    //装饰者
     private AbstractCafe cafe;
 
     public MochaCondiment(AbstractCafe cafe) {
