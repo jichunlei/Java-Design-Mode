@@ -8,12 +8,12 @@ package com.jicl.design.composite;
  */
 public class District extends RegionComposite {
 
-    public District(Integer code, String name) {
-        super(code, name);
+    public District(String name) {
+        super(name);
     }
 
     @Override
     public void print() {
-        System.out.println("----"+getCode() + ":" + getName());
+        System.out.println("----" + getName());
     }
 }

@@ -10,11 +10,13 @@ import java.util.List;
  * @date : 2020/8/24 22:43
  */
 public class City extends RegionComposite {
-
+    /**
+     * 子区域信息
+     */
     private List<RegionComposite> childList = new ArrayList<RegionComposite>();
 
-    public City(Integer code, String name) {
-        super(code, name);
+    public City(String name) {
+        super(name);
     }
 
     @Override
@@ -29,7 +31,7 @@ public class City extends RegionComposite {
 
     @Override
     public void print() {
-        System.out.println("--" + getCode() + ":" + getName());
+        System.out.println("--" + getName());
         for (RegionComposite regionComposite : childList) {
             regionComposite.print();
         }
