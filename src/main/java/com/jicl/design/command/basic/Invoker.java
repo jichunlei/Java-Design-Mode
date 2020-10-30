@@ -7,6 +7,9 @@ package com.jicl.design.command.basic;
  * @date : 2020/9/10 9:24
  */
 public class Invoker {
+    /**
+     * 命令调用者持有一堆命令类
+     */
     private Command openCommand;
     private Command shutdownCommand;
     private Command resetCommand;

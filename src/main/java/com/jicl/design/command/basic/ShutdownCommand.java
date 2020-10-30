@@ -9,6 +9,10 @@ import java.util.Iterator;
  * @date : 2020/9/10 14:52
  */
 public class ShutdownCommand implements Command {
+
+    /**
+     * 命令的真正执行者
+     */
     private MainBoardReceiver mainBoardReceiver;
 
     public ShutdownCommand(MainBoardReceiver mainBoardReceiver) {

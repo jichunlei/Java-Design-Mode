@@ -7,6 +7,9 @@ package com.jicl.design.command.basic;
  * @date : 2020/9/10 9:21
  */
 public class OpenCommand implements Command {
+    /**
+     * 命令的真正执行者
+     */
     private MainBoardReceiver mainBoardReceiver;
 
 
